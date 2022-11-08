@@ -1,4 +1,4 @@
-package com.example.lib;
+package com.example.lib.basics;
 
 public class Char {
 

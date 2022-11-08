@@ -1,4 +1,4 @@
-package com.example.lib;
+package com.example.lib.basics;
 
 public class FloatDouble {
     protected static int ageVita = 13;
