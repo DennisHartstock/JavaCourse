@@ -4,15 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         Box box1 = new Box();
-        box1.height = 10;
-        box1.length = 10;
-        box1.width = 10;
+        box1.setDimens(10, 10, 10);
         box1.showVolume();
 
         Box box2 = new Box();
-        box2.height = 20;
-        box2.length = 20;
-        box2.width = 20;
+        box2.setDimens(20, 20, 20);
         box2.showVolume();
 
         Person vita = new Person();
@@ -40,5 +36,12 @@ public class Main {
         myDog.speed = 3;
         System.out.println(myDog.getInfo());
         myDog.run();
+
+        Test test = new Test();
+        System.out.println(test.square(20));
+
+        Rectangle rectangle = new Rectangle();
+        rectangle.setDimens(20, 10);
+        System.out.println(rectangle.getArea());
     }
 }
