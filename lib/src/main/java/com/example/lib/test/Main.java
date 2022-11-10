@@ -1,12 +1,22 @@
 package com.example.lib.test;
 
-import com.example.lib.oop.MyMath;
-
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(MyMath.length(3));
-        System.out.println(MyMath.area(4));
-        System.out.println(MyMath.sum(4, 5, 1));
+        MyArrayList employees = getEmployees();
+        employees.add("Nick");
+        for (int i = 0; i < employees.getSize(); i++) {
+            System.out.println(employees.get(i));
+        }
+    }
+
+    private static MyArrayList getEmployees() {
+        MyArrayList employees = new MyArrayList();
+        employees.add("John");
+        employees.add("Olivia");
+        employees.add("Alex");
+        employees.add("Max");
+        employees.add("Thelma");
+        return employees;
     }
 }
