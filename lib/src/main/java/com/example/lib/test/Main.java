@@ -1,22 +1,21 @@
 package com.example.lib.test;
 
+import com.example.lib.oop.Person;
+
 public class Main {
 
     public static void main(String[] args) {
-        MyArrayList employees = getEmployees();
-        employees.add("Nick");
-        for (int i = 0; i < employees.getSize(); i++) {
-            System.out.println(employees.get(i));
-        }
-    }
+//        String s = "10";
+//        String s1 = "20";
+//        int x = Integer.parseInt(s);
+//        int y = Integer.parseInt(s1);
 
-    private static MyArrayList getEmployees() {
-        MyArrayList employees = new MyArrayList();
-        employees.add("John");
-        employees.add("Olivia");
-        employees.add("Alex");
-        employees.add("Max");
-        employees.add("Thelma");
-        return employees;
+//        System.out.println(x + y);
+
+        String s = "This is John. He is 27 years old.";
+        String name = s.substring(8, 12);
+        int age = Integer.parseInt(s.substring(20, 22));
+        Person person = new Person(name, age);
+        System.out.println(person.getName() + "\n" + person.getAge());
     }
 }
