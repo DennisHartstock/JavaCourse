@@ -5,12 +5,12 @@ public class CatFamily {
     protected int legs;
     protected boolean canEatPerson;
 
-//    public CatFamily() {
-//        eyes = 2;
-//        legs = 4;
-//        canEatPerson = true;
-//    }
+    public CatFamily() {
+    }
 
+    public void eat() {
+        System.out.print("I'm eating ");
+    }
 
     public CatFamily(int eyes, int legs, boolean canEatPerson) {
         this.eyes = eyes;

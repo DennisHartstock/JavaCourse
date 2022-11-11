@@ -4,6 +4,11 @@ public class Cat extends CatFamily {
 
     public Cat() {
         super(2, 4, false);
-        legs = 3;
+    }
+
+    @Override
+    public void eat() {
+        super.eat();
+        System.out.println("a mouse");
     }
 }
