@@ -1,6 +1,7 @@
 package com.example.lib.interfaces;
 
 public class Fish extends Animal implements AbleToSwim {
+
     @Override
     public void eat() {
         System.out.println("fish food");

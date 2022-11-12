@@ -1,6 +1,7 @@
 package com.example.lib.interfaces;
 
 public class Dog extends Animal implements AbleToRun, AbleToSwim {
+
     @Override
     public void eat() {
         System.out.println("dog food");

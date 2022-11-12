@@ -1,59 +1,25 @@
 package com.example.lib.interfaces;
 
-import java.util.ArrayList;
-
 public class Main {
 
     public static void main(String[] args) {
-        Director director = new Director();
-        Developer developer = new Developer();
-        Cook cook = new Cook();
+        Client client = new Client();
+//        WaiterBob waiterBob = new WaiterBob();
+        client.makeOrder(new Waiter() {
+            @Override
+            public void bringOrder(String dish) {
+                System.out.println("Here is your " + dish);
+            }
+        }, "Fish");
 
-        ArrayList<Worker> workingPersons = new ArrayList<>();
-        workingPersons.add(director);
-        workingPersons.add(developer);
-        workingPersons.add(cook);
-        for (Worker worker : workingPersons) {
-            worker.work();
-        }
-
-        ArrayList<Driver> drivingPersons = new ArrayList<>();
-        drivingPersons.add(developer);
-        drivingPersons.add(cook);
-        for (Driver driver : drivingPersons) {
-            driver.drive();
-        }
-
-
-//        Cat cat = new Cat();
-//        Dog dog = new Dog();
-//        Bird bird = new Bird();
-//        Fish fish = new Fish();
-//        ArrayList<Animal> animals = new ArrayList<>();
-//        animals.add(cat);
-//        animals.add(dog);
-//        animals.add(bird);
-//        animals.add(fish);
-
-//        for (Animal animal : animals) {
-//            animal.eat();
-//        }
-
-//        ArrayList<AbleToRun> runningAnimals = new ArrayList<>();
-//        runningAnimals.add(cat);
-//        runningAnimals.add(dog);
-//        runningAnimals.add(bird);
+//        Director director = new Director();
+////        Developer developer = new Developer();
+//        director.force(new Worker() {
 //
-//        for (AbleToRun animal : runningAnimals) {
-//            animal.run();
-//        }
-//
-//        bird.fly();
-//        fish.swim();
-
-//        Animal animal = new Dog();
-//        animal.eat();
-//        Dog dog = (Dog) animal;
-//        dog.run();
+//            @Override
+//            public void work() {
+//                System.out.println("I'm working");
+//            }
+//        });
     }
 }
