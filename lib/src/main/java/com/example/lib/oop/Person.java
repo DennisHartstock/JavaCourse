@@ -26,4 +26,9 @@ public class Person {
             this.age = age;
         }
     }
+
+    @Override
+    public String toString() {
+        return String.format("Name: %s, Age: %s", name, age);
+    }
 }

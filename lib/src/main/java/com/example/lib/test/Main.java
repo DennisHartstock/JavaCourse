@@ -1,14 +1,23 @@
 package com.example.lib.test;
 
-import com.example.lib.inheritance.Rectangle;
-import com.example.lib.inheritance.Triangle;
+import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(3, 4);
-        Triangle triangle = new Triangle(1, 2, 3);
-        rectangle.showPerimeter();
-        triangle.showPerimeter();
+        Random random = new Random();
+
+        for (int i = 0; i < 100; i++) {
+            int dice = random.nextInt(6) + 1;
+            System.out.printf("Dice value: %s%n", dice);
+        }
+
+//        for (int i = 0; i < 20; i++) {
+//            int randomInt = random.nextInt(6) + 5;
+//            System.out.print(randomInt + " ");
+//        }
+
+//        Person person = new Person("John", 25);
+//        System.out.println(person);
     }
 }
