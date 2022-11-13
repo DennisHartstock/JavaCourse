@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Java Course</string>
+    <string name="greeting">Привет, пользователь!</string>
 </resources>
